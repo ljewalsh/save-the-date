@@ -9,7 +9,7 @@ body {
 .polaroid-1, .polaroid-2 {
   width: 400px;
   position: relative;
-  &:before {
+  &::before {
   width: 400px;
     background-size: 100%;
     position: absolute;
@@ -27,12 +27,12 @@ body {
   transform: rotate(-5deg);
 }
 
-.polaroid-1:before {
+.polaroid-1::before {
   height: 480px;
   background-image: url('./images/polaroid-1.png');
 }
 
-.polaroid-2:before {
+.polaroid-2::before {
   top: 50px;
   left: -30px;
   height: 484px;
@@ -57,11 +57,11 @@ body {
   transform: rotate(0.3deg);
 }
 
-.left:hover, .left:hover:before {
+.left:hover, .left:hover::before {
   transform: rotate(2deg);
 }
 
-.right:hover:before {
+.right:hover::before {
   transform: rotate(-2deg);
 }
 
