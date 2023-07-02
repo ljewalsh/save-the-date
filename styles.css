@@ -1,0 +1,83 @@
+body {
+  background-image: url('./images/corkboard.png');
+  display: flex;
+  justify-content: space-evenly;
+  align-items: 'center';
+  flex-wrap: wrap;
+}
+
+.polaroid-1, .polaroid-2 {
+  width: 400px;
+  position: relative;
+  &:before {
+  width: 400px;
+    background-size: 100%;
+    position: absolute;
+    content: "";
+  }
+}
+
+.polaroid-1 {
+  height: 480px;
+}
+
+.polaroid-2 {
+  top: 50px;
+  height: 480px;
+  transform: rotate(-5deg);
+}
+
+.polaroid-1:before {
+  height: 480px;
+  background-image: url('./images/polaroid-1.png');
+}
+
+.polaroid-2:before {
+  top: 50px;
+  left: -30px;
+  height: 484px;
+  background-image: url('./images/polaroid-2.png');
+}
+
+.polaroid-1 img {
+  max-width: 350px;
+  max-height: 347px;
+  position: absolute;
+  left: 27px;
+  top: 32px;
+  transform: rotate(-0.5deg);
+}
+
+.polaroid-2 img {
+  max-width: 350px; 
+  max-height: 370px;
+  position: absolute;
+  left: -4px;
+  top: 76px;
+  transform: rotate(0.3deg);
+}
+
+.left:hover, .left:hover:before {
+  transform: rotate(2deg);
+}
+
+.right:hover:before {
+  transform: rotate(-2deg);
+}
+
+.left:hover img {
+  transform: rotate(1.5deg);
+}
+
+.right:hover img {
+  transform: rotate(-1.7deg);
+}
+
+.brochure {
+  position: relative;
+  top: 30px;
+  width: 400px;
+  height: 100%;
+  transform: rotate(1deg);
+}
+
