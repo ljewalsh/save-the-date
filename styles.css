@@ -26,14 +26,14 @@ body {
 
 .polaroid-1::before {
   height: 480px;
-  background-image: url('./images/polaroid-1.png');
+  background: url('./images/polaroid-1.png');
 }
 
 .polaroid-2::before {
   top: 50px;
   left: -30px;
   height: 484px;
-  background-image: url('./images/polaroid-2.png');
+  background: url('./images/polaroid-2.png');
 }
 
 .polaroid-1 img {
