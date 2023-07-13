@@ -8,22 +8,19 @@ body {
 
 .polaroid-1, .polaroid-2 {
   width: 400px;
+  height: 480px;
   position: relative;
   &::before {
-  width: 400px;
+    width: 400px;
     background-size: 100%;
     position: absolute;
     content: "";
+    display: block;
   }
-}
-
-.polaroid-1 {
-  height: 480px;
 }
 
 .polaroid-2 {
   top: 50px;
-  height: 480px;
   transform: rotate(-5deg);
 }
 
@@ -74,10 +71,20 @@ body {
 }
 
 .brochure {
-  position: relative;
   top: 30px;
-  width: 400px;
-  height: 100%;
+  position: relative;
   transform: rotate(1deg);
 }
 
+.brochure-image {
+  width: 400px;
+  height: 100%;
+}
+
+.kiwi {
+  left: -40px;
+  top: -40px;
+  position: absolute;
+  width: 280px;
+  z-index: 1;
+}
