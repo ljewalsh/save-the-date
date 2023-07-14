@@ -7,6 +7,7 @@ body {
 }
 
 .polaroid-1, .polaroid-2 {
+  top: 30px;
   width: 400px;
   height: 480px;
   position: relative;
@@ -26,17 +27,17 @@ body {
 
 .polaroid-1::before {
   height: 480px;
-  background: url('./images/polaroid-1.png');
+  background-image: url('./images/polaroid-1.png');
 }
 
 .polaroid-2::before {
   top: 50px;
   left: -30px;
   height: 484px;
-  background: url('./images/polaroid-2.png');
+  background-image: url('./images/polaroid-2.png');
 }
 
-.polaroid-1 img {
+.polaroid-1 .snap {
   max-width: 350px;
   max-height: 347px;
   position: absolute;
@@ -45,7 +46,7 @@ body {
   transform: rotate(-0.5deg);
 }
 
-.polaroid-2 img {
+.polaroid-2 .snap {
   max-width: 350px; 
   max-height: 370px;
   position: absolute;
@@ -62,12 +63,45 @@ body {
   transform: rotate(-2deg);
 }
 
-.left:hover img {
+.left:hover .snap {
   transform: rotate(1.5deg);
 }
 
-.right:hover img {
+.right:hover .snap {
   transform: rotate(-1.7deg);
+}
+
+.pin-1 {
+  width: 50px;
+  z-index: 1;
+  position: absolute;
+  top: -20px;
+  left: 150px;
+}
+
+.pin-2 {
+  width: 50px;
+  z-index: 1;
+  position: absolute;
+  left: 150px;
+}
+
+.kiwi-pin {
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  transform: rotate(10deg);
+}
+
+.mate-sticker {
+  position: absolute;
+  width: 150px;
+  z-index: 1;
+  top: 350px;
+  left: 250px;
 }
 
 .brochure {
@@ -81,10 +115,7 @@ body {
   height: 100%;
 }
 
-.kiwi {
-  left: -40px;
-  top: -40px;
-  position: absolute;
-  width: 280px;
+.flag {
+  height: 300px;
   z-index: 1;
 }
